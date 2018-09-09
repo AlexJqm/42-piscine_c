@@ -3,35 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aljacque <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/04 18:27:56 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/04 18:27:59 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/09 13:27:51 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(char *str)
 {
 	int i;
-	int neg;
-	int nb;
+	int j;
 
 	i = 0;
-	nb = 0;
-	while (str[i] >= 0 && str[i] <= 33)
-		i++;
-	if (str[i] == 45)
-		neg = 1;
-	if (str[i] == 45 || str[i] == 43)
-		i++;
-	while (str[i] >= 48 && str[i] <= 57)
+	j = 1;
+	while ((*str >= 9 && *str <= 13) || *str == 32 || *str == 127)
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		nb = nb * 10;
-		nb = nb + (str[i] - 48);
-		i++;
+		if (*str == '-')
+			j = -1;
+		str++;
 	}
-	if (neg == 1)
-		return (-nb);
-	else
-		return (nb);
+	while (*str != '\0' && *str >= '0' && *str <= '9')
+	{
+		i = i * 10 + (*str - 48);
+		str++;
+	}
+	return (i * j);
 }

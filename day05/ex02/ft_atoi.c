@@ -6,11 +6,11 @@
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/04 15:08:40 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/08 20:32:25 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/09 13:27:39 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
 	int i;
 	int j;
@@ -22,7 +22,7 @@ int     ft_atoi(char *str)
 	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
-		j = -1;
+			j = -1;
 		str++;
 	}
 	while (*str != '\0' && *str >= '0' && *str <= '9')
