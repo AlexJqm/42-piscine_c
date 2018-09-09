@@ -1,6 +1,8 @@
-# Stats 42
+# Stats 42 - aljacque - Alexandre Jacquemin
 
 **Level 3.59**
+
+----
 
 **Day00 100%**  
 ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: OK | ex09: OK | ex10: OK | ex11: OK
@@ -22,3 +24,16 @@ Working
 
 **Day06 70%**  
 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: KO
+
+----
+
+**Rush00 0%**  
+Problème d'appel de fonctions, code fonctionnel.
+
+**Rush01**  
+Working
+
+----
+
+**Match N Match**  
+Working
