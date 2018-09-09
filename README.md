@@ -28,12 +28,20 @@ ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: KO
 ----
 
 **Rush00 0%**  
-Problème d'appel de fonctions, code fonctionnel.
+Problème non corrigé d'appel de fonctions, code fonctionnel.
 
 **Rush01**  
 Working
 
 ----
 
+**Sastantua Non insris**
+
 **Match N Match**  
 Working
+
+----
+
+**Exam00 0%**
+
+**Exam01 22%**
