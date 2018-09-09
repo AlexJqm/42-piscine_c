@@ -35,7 +35,7 @@ Incomplet.
 
 ----
 
-**Sastantua Non insris**
+**Sastantua Non inscrit**
 
 **Match N Match**  
 Working
