@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aljacque <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/30 12:00:11 by aljacque          #+#    #+#             */
-/*   Updated: 2018/08/30 17:42:00 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/08 22:55:55 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,11 @@ void	ft_putchar(char c);
 void	ft_putnbr(int nb)
 {
 	if (nb == -2147483648)
-		return ;
+	{
+		ft_putchar('-');
+		ft_putchar('2');
+		nb = 147483648;
+	}
 	if (nb < 0)
 	{
 		ft_putchar('-');

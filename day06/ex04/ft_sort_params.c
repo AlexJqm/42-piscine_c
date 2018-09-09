@@ -6,7 +6,7 @@
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/06 08:34:12 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/06 15:07:03 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/08 17:07:39 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,29 +45,36 @@ int		ft_strcmp(char *s1, char *s2)
 	return (s1[i] - s2[i]);
 }
 
+void	ft_print(int argc, char **argv)
+{
+	int i;
+
+	i = 0;
+	while (i < argc)
+	{
+		ft_putstr(argv[i]);
+		ft_putchar('\n');
+		i++;
+	}
+}
+
 int		main(int argc, char **argv)
 {
 	int i;
-	int j;
 
-	if (argc > 2)
+	i = 1;
+	while (i < argc - 1)
 	{
-		j = 1;
-		while (j < argc - 1)
+		if (ft_strcmp(argv[i], argv[i + 1]) > 0)
 		{
-			i = j + 1;
-			while (i < argc)
-			{
-				if (ft_strcmp(argv[j], argv[i]) > 0)
-					ft_swap(&argv[j], &argv[i]);
-				i++;
-			}
-			ft_putstr(argv[j]);
-			ft_putchar('\n');
-			j++;
+			ft_swap(&argv[i], &argv[i + 1]);
+			i = 0;
 		}
-		ft_putstr(argv[j]);
-		ft_putchar('\n');
+		i++;
+	}
+	if (argc)
+	{
+		ft_print(argc, argv);
 	}
 	return (0);
 }

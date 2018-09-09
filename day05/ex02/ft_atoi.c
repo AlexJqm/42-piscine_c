@@ -6,34 +6,29 @@
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/04 15:08:40 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/07 16:39:01 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/08 20:32:25 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(char *str)
+int     ft_atoi(char *str)
 {
 	int i;
-	int neg;
-	int nb;
+	int j;
 
 	i = 0;
-	nb = 0;
-	while ((str[i] == ' ') || (str[i] == '\t') ||
-	(str[i] == '\n') || (str[i] == '\v') ||
-	(str[i] == '\r'))
-		i++;
-	if (str[i] == 45)
-		neg = 1;
-	if (str[i] == 45 || str[i] == 43)
-		i++;
-	while (str[i] >= 48 && str[i] <= 57)
+	j = 1;
+	while ((*str >= 9 && *str <= 13) || *str == 32 || *str == 127)
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		nb = nb * 10;
-		nb = nb + (str[i] - 48);
-		i++;
+		if (*str == '-')
+		j = -1;
+		str++;
 	}
-	if (neg == 1)
-		return (-nb);
-	else
-		return (nb);
+	while (*str != '\0' && *str >= '0' && *str <= '9')
+	{
+		i = i * 10 + (*str - 48);
+		str++;
+	}
+	return (i * j);
 }
