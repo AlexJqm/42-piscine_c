@@ -1,0 +1,7 @@
+cdCredentials cache: API:D89CE73E-7B15-4B95-821C-E3910E5B50E7
+        Principal: aljacque@42.FR
+
+  Issued                Expires               Principal
+Aug 27 20:22:51 2018  Sep  3 20:22:51 2018  krbtgt/42.FR@42.FR
+Aug 27 20:22:52 2018  Sep  3 20:22:51 2018  ldap/ldap-proxy.42.fr@42.FR
+Aug 27 20:22:53 2018  Sep  3 20:22:51 2018  HTTP/student-storage-2.42.fr@42.FR
