@@ -38,7 +38,8 @@ Incomplet.
 
 ----
 
-**Sastantua Non inscrit**
+**Sastantua**  
+Non inscrit.
 
 **Match N Match**  
 ex00: OK | ex01: OK
