@@ -6,9 +6,12 @@
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/04 15:08:40 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/09 13:27:39 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/09 21:10:43 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 int	ft_atoi(char *str)
 {
@@ -31,4 +34,11 @@ int	ft_atoi(char *str)
 		str++;
 	}
 	return (i * j);
+}
+
+int        main(void)
+{
+	printf("%d\n", ft_atoi("-45a6"));
+	printf("%d", atoi("-45a6"));
+	return (0);
 }
