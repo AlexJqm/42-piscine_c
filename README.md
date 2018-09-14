@@ -25,16 +25,21 @@ ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex0
 **Day06 70% - 2 retry**  
 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK
 
-**Day07**  
-Working
+**Day07 60% - 2 retry**  
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: Nothing turned in | ex07: Nothing turned in
+
+**Day08 100% - 1 retry**  
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK
+
+**Day09 0%**  
 
 ----
 
 **Rush00 0%**  
 Problème non corrigé d'appel de fonctions, code fonctionnel.
 
-**Rush01**  
-Incomplet.
+**Rush01 0%**  
+Code incomplet.
 
 ----
 
