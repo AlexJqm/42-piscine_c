@@ -44,6 +44,9 @@ Problème non corrigé d'appel de fonctions, code fonctionnel.
 **🚫 Rush01 0%**  
 Code incomplet.
 
+**🚫 Rush02 0%**  
+Projet non rendu.
+
 ----
 
 **🚫 Sastantua**  
