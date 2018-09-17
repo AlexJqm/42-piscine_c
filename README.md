@@ -33,6 +33,9 @@ ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK
 
 **🚫 Day09 0%**  
 
+**⚠️ Day10 0%**  
+Correction en attente.
+
 ----
 
 **🚫 Rush00 0%**  
@@ -41,6 +44,9 @@ Problème non corrigé d'appel de fonctions, code fonctionnel.
 **🚫 Rush01 0%**  
 Code incomplet.
 
+**🚫 Rush02 0%**  
+Projet non rendu.
+
 ----
 
 **🚫 Sastantua**  
@@ -48,6 +54,9 @@ Non inscrit.
 
 **✅ Match N Match**  
 ex00: OK | ex01: OK
+
+**⚠️ EvalExpr**  
+Correction en attente.
 
 ----
 
