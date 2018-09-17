@@ -33,7 +33,7 @@ ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK
 
 **🚫 Day09 0%**  
 
-**Day010 0%**  
+**Day10 0%**  
 Correction en attente.
 
 ----
