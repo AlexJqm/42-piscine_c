@@ -1,4 +1,4 @@
-# Stats 42 - aljacque - Alexandre Jacquemin
+Alexandre Jacquemin
 
 **Level 6.22**
 
@@ -49,14 +49,13 @@ Projet non rendu.
 
 ----
 
-**🚫 Sastantua**  
+**🚫 Sastantua 0%**  
 Non inscrit.
 
-**✅ Match N Match**  
+**✅ Match N Match 100%**  
 ex00: OK | ex01: OK
 
-**⚠️ EvalExpr**  
-Correction en attente.
+**✅ EvalExpr 33%**  
 
 ----
 
