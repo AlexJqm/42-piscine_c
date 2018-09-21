@@ -36,6 +36,12 @@ ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK
 **✅ Day10 77% - 2 retry**  
 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: KO | ex09: Nothing turned in
 
+**⚠️ Day11**  
+
+**⚠️ Day12**  
+
+**⚠️ Day13**  
+
 ----
 
 **🚫 Rush00 0%**  
@@ -56,6 +62,8 @@ Non inscrit.
 ex00: OK | ex01: OK
 
 **✅ EvalExpr 33%**  
+
+**⚠️ BSQ**  
 
 ----
 
