@@ -1,6 +1,6 @@
 Alexandre Jacquemin
 
-**Level 6.93  -  Logtime: ~320h**
+**Level 6.93  -  Logtime ~320h**
 
 ----
 
