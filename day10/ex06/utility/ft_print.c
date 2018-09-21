@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_opp.h                                           :+:      :+:    :+:   */
+/*   ft_print.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/16 20:40:16 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/16 20:47:24 by aljacque         ###   ########.fr       */
+/*   Created: 2018/09/19 03:22:15 by aljacque          #+#    #+#             */
+/*   Updated: 2018/09/20 15:42:54 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_OPP_H
-# define FT_OPP_H
+#include "do_op.h"
 
-t_opp g_opptab[] =
+void	ft_putchar(char c)
 {
-	{"+", &ft_add},
-	{"-", &ft_sub},
-	{"*", &ft_mul},
-	{"/", &ft_div},
-	{"%", &ft_mod},
-	{"", &ft_usage}
-};
+	write(1, &c, 1);
+}
 
-#endif
+void	ft_putnbr(int nb)
+{
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		if (nb == -2147483648)
+		{
+			ft_putchar('2');
+			nb = -147483648;
+		}
+		nb *= -1;
+	}
+	if (nb > 9)
+		ft_putnbr(nb / 10);
+	ft_putchar(nb % 10 + '0');
+}

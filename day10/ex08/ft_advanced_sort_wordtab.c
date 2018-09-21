@@ -6,25 +6,13 @@
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/15 20:29:07 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/16 20:06:01 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:46:41 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+void	ft_swap(char **a, char **b)
 {
-	int i;
-
-	i = 0;
-	while (s1[i] != '\0' && s1[i] == s2[i])
-		i++;
-	if (s1[i] == '\0' && s1[i] == s2[i])
-		return (0);
-	return (s1[i] - s2[i]);
-}
-
-void	ft_swap(int *a, int *b)
-{
-	int tmp;
+	char *tmp;
 
 	tmp = *a;
 	*a = *b;
@@ -42,8 +30,8 @@ void	ft_advanced_sort_wordtab(char **tab, int (*cmp)(char *, char *))
 		j = i + 1;
 		while (tab[j] != 0)
 		{
-			if (ft_strcmp(tab[i], tab[j]) > 0)
-				ft_swap(&tab[j], &tab[i]);
+			if (cmp(tab[i], tab[j]) > 0)
+				ft_swap(&tab[i], &tab[j]);
 			j++;
 		}
 		i++;

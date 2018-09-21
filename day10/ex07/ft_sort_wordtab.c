@@ -6,7 +6,7 @@
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/15 20:28:12 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/16 20:05:16 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:46:57 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_swap(char **a, char **b)
 	*b = tmp;
 }
 
-char	ft_sort_wordtab(char **tab)
+void	ft_sort_wordtab(char **tab)
 {
 	int i;
 	int j;

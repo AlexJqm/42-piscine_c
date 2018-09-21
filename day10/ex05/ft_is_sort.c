@@ -6,20 +6,24 @@
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/15 14:34:16 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/16 20:00:52 by aljacque         ###   ########.fr       */
+/*   Updated: 2018/09/18 14:24:19 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_sort(int *tab, int length, int (*f)(int, int))
 {
 	int i;
+	int j;
 
+	j = 0;
 	i = 0;
 	while (i < length - 1)
 	{
-		if (f(tab[i], tab[i + 1] > 0))
-			return (0);
+		if (f(tab[i], tab[i + 1]) > 0)
+			j++;
 		i++;
 	}
+	if (j != 0 && j != i)
+		return (0);
 	return (1);
 }

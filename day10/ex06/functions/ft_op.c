@@ -1,34 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   atoi.c                                             :+:      :+:    :+:   */
+/*   ft_op.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/15 15:20:52 by aljacque          #+#    #+#             */
-/*   Updated: 2018/09/15 15:59:59 by aljacque         ###   ########.fr       */
+/*   Created: 2018/09/19 03:13:15 by aljacque          #+#    #+#             */
+/*   Updated: 2018/09/20 15:44:28 by aljacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
-{
-	int i;
-	int j;
+#include "do_op.h"
 
-	i = 0;
-	j = 1;
-	while ((*str >= 9 && *str <= 13) || *str == 32 || *str == 127)
-		str++;
-	if (*str == '-' || *str == '+')
+void	ft_plus(int a, int b)
+{
+	ft_putnbr(a + b);
+}
+
+void	ft_minus(int a, int b)
+{
+	ft_putnbr(a - b);
+}
+
+void	ft_mult(int a, int b)
+{
+	ft_putnbr(a * b);
+}
+
+void	ft_div(int a, int b)
+{
+	if (b == 0)
 	{
-		if (*str == '-')
-			j = -1;
-		str++;
+		write(1, "Stop : division by zero", 23);
+		return ;
 	}
-	while (*str != '\0' && *str >= '0' && *str <= '9')
+	ft_putnbr(a / b);
+}
+
+void	ft_mod(int a, int b)
+{
+	if (b == 0)
 	{
-		i = i * 10 + (*str - 48);
-		str++;
+		write(1, "Stop : modulo by zero", 21);
+		return ;
 	}
-	return (i * j);
+	ft_putnbr(a % b);
 }

@@ -5,20 +5,27 @@
 #                                                     +:+ +:+         +:+      #
 #    By: aljacque <aljacque@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/09/15 15:20:54 by aljacque          #+#    #+#              #
-#    Updated: 2018/09/16 19:56:21 by aljacque         ###   ########.fr        #
+#    Created: 2018/09/19 03:10:07 by aljacque          #+#    #+#              #
+#    Updated: 2018/09/20 16:45:04 by aljacque         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = do_op
-SRCS = do_op.c add.c atoi.c div.c mod.c multi.c sous.c
-HEADER = do_op.h
-FLAG = -Wall -Wextra -Werror
-CC = cc $(FLAG) -o
+NAME = do-op
+CFLAGS = -Wall -Wextra -Werror
+SRC = functions/*.c
+UTLY = utility/*.c
+HEADER = header
+OBJECTS = *.o
 
-all:
-	$(CC) $(NAME) $(SRCS) -I $(HEADER)
+all: $(NAME)
+
+$(NAME):
+	gcc $(CFLAGS) -o $(NAME) $(SRC) $(UTLY) -I $(HEADER)
+
 clean:
-	rm -f *.o
-re:
-	clean all
+	rm -f $(OBJECTS)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
