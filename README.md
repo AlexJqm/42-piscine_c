@@ -13,8 +13,8 @@ ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex0
 **✅ Day02 80% - 1 retry**  
 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: KO | ex07: Does not compile
 
-**✅ Day03 80% - 4 retry**  
-ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: OK | ex09: SIGABORT
+**✅ Day03 100% - 5 retry**  
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: OK | ex09: Ok
 
 **✅ Day04 70% - 3 retry**  
 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: Nothing turned in | ex09: Nothing turned in
@@ -33,8 +33,8 @@ ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK
 
 **🚫 Day09 0%**  
 
-**⚠️ Day10 0%**  
-Correction en attente.
+**✅ Day10 77% - 2 retry**  
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: KO | ex09: Nothing turned in
 
 ----
 
@@ -64,3 +64,6 @@ ex00: OK | ex01: OK
 **🚫 Exam01 22%**
 
 **✅ Exam02 27%**
+
+**⚠️ ExamFinal**
+En cours.
